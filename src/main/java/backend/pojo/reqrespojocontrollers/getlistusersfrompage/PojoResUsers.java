@@ -16,5 +16,5 @@ public class PojoResUsers {
     private Integer total;
     private Integer total_pages;
     private List<DataJSONArray> data;
-    private SupportJSONObject supportObject;
+    private SupportJSONObject support;
 }
