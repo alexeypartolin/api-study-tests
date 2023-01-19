@@ -6,9 +6,8 @@ import io.restassured.response.Response;
 import static io.restassured.RestAssured.given;
 
 public class Service {
-
-    @Step("GET {endpoint}")
-    public static Response getResponse(String endpoint) {
+    @Step("GET {endpoint")
+    public static Response getResponseCustomMethod(String endpoint) {
         return given()
                 .get(endpoint)
                 .then()
