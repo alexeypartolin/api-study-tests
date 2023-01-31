@@ -7,4 +7,10 @@ public class Endpoints {
             return "/api/users?page=" + pageNumber;
         }
     }
+
+    public static class Post {
+        public static String postCreateNewUser() {
+            return "/api/users";
+        }
+    }
 }

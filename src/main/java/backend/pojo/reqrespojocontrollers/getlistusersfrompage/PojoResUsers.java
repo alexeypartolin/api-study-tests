@@ -1,5 +1,7 @@
 package backend.pojo.reqrespojocontrollers.getlistusersfrompage;
 
+import io.qameta.allure.internal.shadowed.jackson.annotation.JsonIgnoreProperties;
+import io.qameta.allure.internal.shadowed.jackson.annotation.JsonProperty;
 import lombok.*;
 
 import java.util.List;
@@ -10,10 +12,12 @@ import java.util.List;
 @ToString
 @Builder
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class PojoResUsers {
     private Integer page;
     private Integer per_page;
-    private Integer total;
+    @JsonProperty("total")
+    private Integer Vsego;
     private Integer total_pages;
     private List<DataJSONArray> data;
     private SupportJSONObject support;
