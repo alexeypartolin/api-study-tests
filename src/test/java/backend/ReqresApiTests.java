@@ -130,7 +130,7 @@ public class ReqresApiTests {
                 .then()
                 .extract().response().as(PojoResCreateUser.class);
 
-        var responseId = responseBody2.getId();
+        var responseId = responseBody2.getId(); // этот ID не даст ничего при его запросе в GET
 
         System.out.println(responseId);
     }
